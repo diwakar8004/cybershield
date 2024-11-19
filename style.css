@@ -1,0 +1,153 @@
+*{
+    line-height: 1.5;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 50px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    background-color: #36454F;
+    color: white;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 5px;
+    padding: 0;
+}
+
+nav ul li {
+    
+    margin-left: 20px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.st {
+    background-image: url("bgimg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.st button {
+    background-color: #008080;
+    color: white;
+    border: 0;
+    transition: hover, 0.5s;
+}
+
+.st button:hover {
+    background-color: #FF5733;
+    
+}
+
+#contact {
+    height: 200px;
+    background-color: #36454F;
+    color: #D3D3D3;
+    text-align: center;
+    padding-top: 20px;    
+}
+
+footer a {
+    list-style-type: none;
+    color: #D3D3D3;
+    text-decoration: none;
+    transition: hover, 0.5s;
+}
+
+#about {
+    position: relative; /* Positioning for overlay */
+    color: white; /* Text color */
+    padding: 40px; /* Inner padding */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+#about h2 {
+    font-family: 'Roboto', sans-serif; /* Heading font */
+    font-size: 36px; /* Heading size */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Shadow effect */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+#about p {
+    font-family: 'Open Sans', sans-serif; /* Paragraph font */
+    font-size: 18px; /* Paragraph size */
+    line-height: 1.6; /* Line spacing */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+/* .explore-button {
+    background-color: #008080; 
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+} */
+/* 
+.explore-button:hover {
+    background-color: #007B7F;
+} */
+
+
+footer a:hover{
+    font-size: 18px;
+    color: white;
+}
+
+#about button:hover{
+    background-color: #008080;
+    cursor: pointer;
+}
+
+#about button {
+    transition: hover, 0.5s;
+}
+
+.explr-btn {
+    text-decoration: none ;
+    background-color: #008080;
+    color: white;
+    border: 0;
+    transition: hover, 0.5s;
+}
+
+.explr-btn :hover{
+    background-color: #FF5733;
+}

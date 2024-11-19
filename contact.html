@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <h2>Contact Form</h2>
+            <input type="hidden" name="access_key" value="ae5abf97-0c45-40cf-8f08-7e353e4a4348">
+            <label for="fname">Your Name : </label>
+            <input type="text" placeholder="Your Full Name" name="fname">
+            <label for="Email">Your Email : </label>
+            <input type="email" placeholder="Valid Email Name" name="Email">
+            <label for="massage">Massage : </label>
+            <textarea name="massage" id="">Massage</textarea>
+
+            <label for="select">Subject</label>
+            <select>
+                <option>Job Enquiry</option>
+                <option>Join Services</option>
+            </select>
+            <button>Send</button>
+        </form>
+    </div>
+</body>
+</html>
