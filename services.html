@@ -4,149 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="services.css">
 </head>
 <body>
-    <header>
+    <header class="site-header" role="banner">
         <div class="logo">
-            <img class="w-14" src="https://hexadefend.com/static/media/hexalogo2.1689242e6f096bc381e4.webp" alt="hexadefend-logo">
+            <a href="index.html" class="brand">
+                <img src="https://hexadefend.com/static/media/hexalogo2.1689242e6f096bc381e4.webp" alt="HexaDefend logo">
+                <span class="brand-text">HexaDefend</span>
+            </a>
         </div>
-        <nav>
-            <ul>
+        <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="login.html">Logout</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li id="account-area"><a href="login.html" class="btn small outline">Login</a> <a href="register.html" class="btn small primary">Register</a></li>
+                
             </ul>
         </nav>
     </header>
-    <h2>Services we provide</h2>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <h3 class="title">Penetration Testing (Ethical Hacking)</h3>
-                
+    <div class="container">
+        <h2 class="center">Services we provide</h2>
+        <div class="services-grid">
+            <div class="service">
+                <div class="service-icon">🔒</div>
+                <h3>Penetration Testing</h3>
+                <p>Simulated attacks to find real-world vulnerabilities across networks, web and mobile apps.</p>
+                <a href="penetration-testing.html" class="more btn small ghost">Learn more</a>
             </div>
-        <div class="flip-card-back">
-            <ul>
-                <li><a href="https://www.ibm.com/topics/network-penetration-testing">Network Penetration Testing</a></li>
-                <li><a href="https://www.tutorialspoint.com/software_testing_dictionary/web_application_testing.htm">Web Application Testin</a></li>
-                <li><a href="https://www.guardsquare.com/what-is-mobile-application-security-testing">Mobile Application Testing</a></li>
-                <li><a href="https://purplesec.us/learn/social-engineering-penetration-testing/">Social Engineering Testing</a></li>
-                <li></li>
-            </ul>
-        </div>
-    </div>
-    </div>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <h3 class="title">Vulnerability Assessment</h3>
-            
+            <div class="service">
+                <div class="service-icon">🔍</div>
+                <h3>Vulnerability Assessment</h3>
+                <p>Automated scanning and manual verification, prioritization and remediation guidance.</p>
+                <a href="vulnerability-assessment.html" class="more btn small ghost">Learn more</a>
             </div>
-            <div class="flip-card-back">
-                <ul>
-                    <li><a href="Planning and Scope Definition">Planning and Scope Definition</a></li>
-                    <li><a href="https://www.beyondtrust.com/resources/glossary/vulnerability-scanning">Vulnerability Scanning</li>
-                    <li><a href="https://onlinelibrary.wiley.com/journal/15396924">Risk Analysis</a></li>
-                    <li><a href="https://www.paloaltonetworks.com/cyberpedia/what-is-cyber-incident-reporting">Reporting</a></li>
-                    <li><a href="https://www.encomputers.com/2021/10/cybersecurity-incident-response/">Follow-Up</a></li>
-                </ul>
+            <div class="service">
+                <div class="service-icon">📋</div>
+                <h3>Security Audits & Compliance</h3>
+                <p>Gap analysis, policy development, compliance mapping (ISO, NIST, GDPR).</p>
+                <a href="security-audit.html" class="more btn small ghost">Learn more</a>
             </div>
-    </div>
-    </div>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-        <div class="flip-card-front">
-            <h3 class="title">Security Audits and Compliance</h3>
-        </div>
-        <div class="flip-card-back">
-            <ul>
-                <li><a href="https://www.centraleyes.com/glossary/security-gap-analysis/">Gap Analysis</a></li>
-                <li><a href="https://www.blackfootuk.com/policy-development/">Policy Development</a></li>
-                <li><a href="https://www.checkpoint.com/cyber-hub/cyber-security/what-is-a-cyber-security-risk-assessment/">Risk Assessment</a></li>
-                <li></li>
-            </ul>
-        </div>
-    </div>
-    </div>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <h3 class="title">Managed Security Services (MSSP)</h3>
+            <div class="service">
+                <div class="service-icon">🛡️</div>
+                <h3>Managed Security (MSSP)</h3>
+                <p>24/7 SOC monitoring, threat hunting and managed detection & response services.</p>
+                <a href="managed-security.html" class="more btn small ghost">Learn more</a>
             </div>
-            <div class="flip-card-back">
-                <ul>
-                    <li><a href="contact.html">24/7 Threat Monitoring</a></li>
-                    <li><a href="https://www.techtarget.com/searchsecurity/definition/incident-response">Incident Response</a></li>
-                    <li><a href="https://www.solarwinds.com/resources/it-glossary/log-management">Log Management</a></li>
-                    <li><a href="https://www.microsoft.com/en-in/security/business/security-101/what-is-vulnerability-management#:~:text=FAQs-,Vulnerability%20management%20defined,from%20cyberattacks%20and%20data%20breaches.">Vulnerability Management</a></li>
-                </ul>
+            <div class="service">
+                <div class="service-icon">🚨</div>
+                <h3>Incident Response & Forensics</h3>
+                <p>Rapid containment, forensic analysis and recovery to minimize business impact.</p>
+                <a href="incident-response.html" class="more btn small ghost">Learn more</a>
             </div>
-        </div>
-    </div>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front"> 
-                 <h3 class="title">Incident Response and Forensics</h3>
+            <div class="service">
+                <div class="service-icon">🎓</div>
+                <h3>Consulting & Training</h3>
+                <p>Strategy, secure architecture reviews, and security awareness training for teams.</p>
+                <a href="consulting-training.html" class="more btn small ghost">Learn more</a>
             </div>
-            <div class="flip-card-back">
-                <ul>
-                    <li><a href="https://asq.org/quality-resources/root-cause-analysis?srsltid=AfmBOoolIB_Dt_R5GpFZrlbEhBIAgv6px9xlU7mzNZL4BmN8gK7BR4PG">Root Cause Analysis</a></li>
-                    <li><a href="https://www.fortinet.com/resources/cyberglossary/malware-analysis#:~:text=Malware%20analysis%20is%20the%20study,viruses%2C%20malvertising%2C%20and%20ransomware.">Malware Analysis</a></li>
-                    <li><a href="https://www.ibm.com/topics/data-recovery">Data Recovery</a></li>
-                    <li></li>
-                </ul>
+            <div class="service">
+                <div class="service-icon">☁️</div>
+                <h3>Cloud Security</h3>
+                <p>Cloud configuration reviews, infra-as-code checks and container security.</p>
+                <a href="cloud-security.html" class="more btn small ghost">Learn more</a>
             </div>
-        </div>
-    </div>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <h3 class="title">Cybersecurity Consulting</h3>
+            <div class="service">
+                <div class="service-icon">📡</div>
+                <h3>IoT & Embedded Security</h3>
+                <p>Specialized testing for IoT devices, firmware and embedded systems.</p>
+                <a href="iot-security.html" class="more btn small ghost">Learn more</a>
             </div>
-            <div class="flip-card-back">
-                <ul>
-                    <li><a href="https://iqeq.com/services/compliance-consulting/">Compliance Consulting</a></li>
-                    <li><a href="https://www.trianz.com/cybersecurity/secure-architecture-services">Architecture Consulting</a></li>
-                    <li><a href="https://www.netaccess-india.com/managed-cybersecurity-services/?utm_source=google&utm_medium=PPC&utm_campaign=Managed+cybersecurity+services&gad_source=1&gclid=Cj0KCQiA6Ou5BhCrARIsAPoTxrBjr_zfFDUHW35P-7q3miEq0ZZlS36BrX7YeYL4prANiy9E0RM-G78aAlUgEALw_wcB">Managed Security Services (MSS)</a></li>
-                    <li><a href="https://www.techtarget.com/searchsecurity/definition/security-awareness-training">Security Awareness Training</a></li>
-                    <li><a href="https://www.trianz.com/cybersecurity/cloud-security-services">Cloud Security Consulting</a></li>
-                    <li><a href="https://www.daffodilsw.com/application-security-consulting/#:~:text=Application%20security%20consulting%20is%20a,protect%20their%20data%20from%20compromise.">Application Security Consulting</a></li>
-                    <li><a href="https://www.eccouncil.org/cybersecurity-exchange/threat-intelligence/what-is-cyber-threat-intelligence/#:~:text=Threat%20intelligence%20is%20the%20analysis,organization%20that%20helps%20mitigate%20risks.">Threat Intelligence Consulting</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <h3 class="title">Business Continuity and Disaster Recovery (BC/DR)</h3>
-            </div>
-            <div class="flip-card-back">
-                <ul>
-                    <h4><a href="https://www.cm-alliance.com/cybersecurity-blog/what-is-business-continuity-management-in-cybersecurity">Business Continuity (BC)</a></h4>
-                    <li><a href="https://www.techtarget.com/searchstorage/definition/business-impact-analysis#:~:text=A%20business%20impact%20analysis%20(BIA,a%20disaster%2C%20accident%20or%20emergency.">Business Impact Analysis (BIA)</a></li>
-                    <li><a href="https://mha-it.com/blog/disaster-recovery-testing#:~:text=There%20are%20several%20different%20ways,functional%20drills%2C%20and%20full%20interruptions.">Training and Testing</a></li>
-                    <h4><a href="https://www.ibm.com/topics/disaster-recovery">isaster Recovery (DR)</a></h4>
-                    <li><a href="https://www.techtarget.com/searchdisasterrecovery/definition/disaster-recovery-plan">Disaster Recovery Plan (DRP)</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <h3 class="title">IoT Security</h3>
-            </div>
-            <div class="flip-card-back">
-                <ul>
-                    <li><a href="https://www.cisco.com/c/en_in/products/security/what-is-network-security.html">Network Security</a></li>
-                    <li><a href="https://portswigger.net/web-security/authentication">Weak Authenticatio</a></li>
-                    <li><a href="https://www.linkedin.com/pulse/why-lack-standardization-problem-iot-volkmar-kunerth#:~:text=The%20absence%20of%20standardization%20can,not%20using%20standard%20security%20protocols.">Lack of Standardization</a></li>
-                    <li><a href="https://whatismyipaddress.com/unsecured-network-2">Insecure Networks</li>
-                </ul>
+            <div class="service">
+                <div class="service-icon">🔐</div>
+                <h3>Application Security</h3>
+                <p>Secure SDLC reviews, code review support and remediation guidance.</p>
+                <a href="application-security.html" class="more btn small ghost">Learn more</a>
             </div>
         </div>
     </div>
@@ -168,5 +104,21 @@
             <li></li>
         </ul>
     </div> -->
+    <!-- Unified footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <a href="index.html" class="brand"><img src="https://hexadefend.com/static/media/hexalogo2.1689242e6f096bc381e4.webp" alt="HexaDefend logo"><span class="brand-text">HexaDefend</span></a>
+                <p class="muted">Trusted cybersecurity services for businesses of all sizes.</p>
+            </div>
+            <div class="footer-right">
+                <p>Contact: hello@hexadefend.com</p>
+                <p>Follow us: <a href="#">Twitter</a> • <a href="#">LinkedIn</a></p>
+                <p>© 2025 HexaDefend</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>

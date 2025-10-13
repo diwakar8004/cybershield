@@ -8,51 +8,155 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img class="w-14" src="https://hexadefend.com/static/media/hexalogo2.1689242e6f096bc381e4.webp" alt="hexadefend-logo">
+    <header class="site-header" role="banner">
+        <div class="logo" aria-hidden="false">
+            <a href="index.html" class="brand">
+                <img src="https://hexadefend.com/static/media/hexalogo2.1689242e6f096bc381e4.webp" alt="HexaDefend logo">
+                <span class="brand-text">HexaDefend</span>
+            </a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
+        <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="login.html">Logout</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li id="account-area"><a href="login.html" class="btn small outline">Login</a> <a href="register.html" class="btn small primary">Register</a></li>
+                
             </ul>
         </nav>
     </header>
     <main id="home">
-        <section class="st">
-            <div>
-                <h4>SAFE GUARD</h4>
-                <h6>YOUR FUTURE</h6>
-                <marquee direction="right"><h3>CYBER SHIELD</h3></marquee>
-                
-                    <a href="exploremore.html" class="explr-btn">Explore More</button>
-                
-                
+        <section class="hero st">
+            <div class="hero-inner">
+                <small class="eyebrow">Safe guard</small>
+                <h1 class="hero-title">Cyber Shield</h1>
+                <p class="hero-sub">We protect your digital world with proactive, expert cybersecurity services.</p>
+                <div class="hero-cta">
+                    <a href="exploremore.html" class="btn primary">Explore More</a>
+                    <a href="services.html" class="btn outline">Our Services</a>
+                </div>
             </div>
-            <!-- <button class="explr">Explore more</button> -->
+        </section>
+
+        <!-- Services overview -->
+        <section id="services-overview" class="section container">
+            <h2>Our Core Services</h2>
+            <p class="lead">We deliver a comprehensive portfolio of cybersecurity services tailored to your business needs.</p>
+            <div class="features">
+                <article class="feature-card">
+                    <h3>Pen Testing</h3>
+                    <p>Real-world attack simulations to uncover exploitable weaknesses before attackers do.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Vulnerability Assessment</h3>
+                    <p>Automated and manual scans combined with prioritized remediation guidance.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Managed Detection</h3>
+                    <p>24/7 monitoring, alerting and response handled by our expert SOC team.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- How we work -->
+        <section id="how" class="section container">
+            <h2>How we work</h2>
+            <div class="how-grid">
+                <div class="how-step">
+                    <div class="step-num">1</div>
+                    <h4>Assess</h4>
+                    <p>We map your attack surface and identify the most critical risks.</p>
+                </div>
+                <div class="how-step">
+                    <div class="step-num">2</div>
+                    <h4>Protect</h4>
+                    <p>We implement controls and remediation plans to reduce exposure.</p>
+                </div>
+                <div class="how-step">
+                    <div class="step-num">3</div>
+                    <h4>Detect & Respond</h4>
+                    <p>Continuous monitoring and rapid incident response to contain threats fast.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats / social proof -->
+        <section id="stats" class="section container center">
+            <h2>By the numbers</h2>
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-num">+300</div>
+                    <div class="stat-label">Clients helped</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">24/7</div>
+                    <div class="stat-label">Monitoring</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">99%</div>
+                    <div class="stat-label">Remediation rate</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section container center">
+            <div class="cta-card">
+                <h3>Ready to secure your organization?</h3>
+                <p class="muted">Schedule a free consultation with our security specialists.</p>
+                <a href="contact.html" class="btn primary">Get a Free Consultation</a>
+            </div>
         </section>
                 
-        <section id="about">
-            <h2>CYBER SHIELD</h2>
-                <p><b>"An ounce of prevention is worth a pound of cure."</b> At HexaDefend, we embody this age-old wisdom by prioritizing proactive cybersecurity measures that protect your digital assets before threats arise.</p>
-                <p>In a world where cyberattacks are as common as the morning coffee, we stand as your steadfast shield, ensuring that your information remains under lock and key. Our expert team knows the terrain of cybersecurity like the back of their hand, guiding you through the labyrinth of risks with tailored solutions that fit your unique needs.</p>
-                <p><b>"Better safe than sorry."</b> This mantra drives us to provide comprehensive services—from real-time threat monitoring to vulnerability assessments—because we believe that the best offense is a strong defense.</p>
-                <p>If you wanna see our services.</p>
-                <form action="services.html">
-                    <button>Services</button>
-                </form>
+        <section id="about" class="container section">
+            <div class="content">
+                <h2>About CYBER SHIELD</h2>
+                <p><b>"An ounce of prevention is worth a pound of cure."</b> We prioritize proactive cybersecurity measures that protect your digital assets before threats arise.</p>
+                <p>Our expert team provides tailored solutions — from threat monitoring to vulnerability assessment — designed to keep your organization safe and resilient.</p>
+            </div>
+            <div class="features">
+                <article class="feature-card">
+                    <h3>24/7 Monitoring</h3>
+                    <p>Real-time alerts and continuous monitoring to stop threats early.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Assessments</h3>
+                    <p>Penetration testing and vulnerability scans to find and fix gaps.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Incident Response</h3>
+                    <p>Fast containment, forensics, and recovery to minimize impact.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section container">
+            <h2>What clients say</h2>
+            <div class="testimonials">
+                <blockquote>
+                    "Professional, proactive, and a true partner in our security journey." — Jane D., CTO
+                </blockquote>
+                <blockquote>
+                    "Helped us remediate vulnerabilities before they became problems." — R. Kumar, IT Manager
+                </blockquote>
+            </div>
         </section>
     </main>
-    <footer id="contact">
-        <p><b>Contact : </b>hello@hexadefend.com | (555) 123-4567</p>
-        <p>© 2024 CYBER SHIELD. All rights reserved</p>
-        <a href="">Facebook |</a>
-        <a href="https://www.instagram.com/hexa.defend?igsh=MW50ZXBud2VjZ3pndg==">Instagram |</a>
-        <a href="">Youtube</a>
+    <!-- Unified footer -->
+    <footer id="contact" class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <a href="index.html" class="brand"><img src="https://hexadefend.com/static/media/hexalogo2.1689242e6f096bc381e4.webp" alt="HexaDefend logo"><span class="brand-text">HexaDefend</span></a>
+                <p class="muted">Trusted cybersecurity services for businesses of all sizes.</p>
+            </div>
+            <div class="footer-right">
+                <p>Contact: hello@hexadefend.com</p>
+                <p>Follow us: <a href="#">Twitter</a> • <a href="#">LinkedIn</a></p>
+                <p>© 2025 HexaDefend</p>
+            </div>
+        </div>
     </footer>
 
     <script src="app.js"></script>

@@ -4,31 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <div class="register">
-         <h3>Register To Create an Account</h3>
-         <form action="login.html">
-            <label for="firstName">First Name : </label>
-            <input type="text" placeholder="firstName" id="firstName" required>
-            <label for="lastName">Last Name : </label>
-            <input type="text" placeholder="lastName" required>
-            <label for="DOB">DOB : </label>
-            <input type="date" >
-            <label for="phone">Phone : </label>
-            <input type="number" placeholder="phone number" required>
-            <label for="email">Email : </label>
-            <input type="email" placeholder="email" required>
-            <label for="pass">Create Password : </label>
-            <input type="password" placeholder="set pass" id="setPass" required>
-            <label for="pass">Confirm Password : </label>
-            <input type="password" placeholder="Confirm" id="cnfPass" required>
+    <header class="site-header">
+        <div class="logo">
+            <a class="brand" href="index.html"><img src="https://hexadefend.com/static/media/hexalogo2.1689242e6f096bc381e4.webp" alt="hexadefend-logo"><span class="brand-text">HexaDefend</span></a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="account-area"><a href="login.html" class="btn small outline">Login</a> <a href="register.html" class="btn small primary">Register</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+     <div class="register">
+         <div>
+          <h2>Create an account</h2>
+          <p class="muted">Register to access your dashboard and manage services.</p>
+         </div>
+         <form id="registerForm" action="#" method="post">
+                <label for="firstName">First Name : </label>
+                <input type="text" name="firstName" placeholder="First name" id="firstName" required>
+                <label for="lastName">Last Name : </label>
+                <input type="text" name="lastName" placeholder="Last name" id="lastName" required>
+                <label for="DOB">DOB : </label>
+                <input type="date" name="dob" id="DOB">
+                <label for="phone">Phone : </label>
+                <input type="tel" name="phone" placeholder="Phone number" id="phone" required>
+                <label for="email">Email : </label>
+                <input type="email" name="email" placeholder="email@example.com" id="email" required>
+                <label for="pass">Create Password : </label>
+                <input type="password" name="password" placeholder="Set password" id="setPass" required>
+                <label for="pass">Confirm Password : </label>
+                <input type="password" name="confirmPassword" placeholder="Confirm" id="cnfPass" required>
             
-            <button>Register</button>
+                <button type="submit" class="btn primary">Register</button>
             
-         </form>
-    </div>
+            </form>
+     </div>
+    <footer id="contact" class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <a href="index.html" class="brand"><img src="https://hexadefend.com/static/media/hexalogo2.1689242e6f096bc381e4.webp" alt="HexaDefend logo"><span class="brand-text">HexaDefend</span></a>
+                <p class="muted">Trusted cybersecurity services for businesses of all sizes.</p>
+            </div>
+            <div class="footer-right">
+                <p>Contact: hello@hexadefend.com</p>
+                <p>Follow us: <a href="#">Twitter</a> • <a href="#">LinkedIn</a></p>
+                <p>© 2025 HexaDefend</p>
+            </div>
+        </div>
+    </footer>
     <script src="register.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

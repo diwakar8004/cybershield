@@ -4,20 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="logo">
+            <a class="brand" href="index.html"><img src="https://hexadefend.com/static/media/hexalogo2.1689242e6f096bc381e4.webp" alt="hexadefend-logo"><span class="brand-text">HexaDefend</span></a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="account-area"><a href="login.html" class="btn small outline">Login</a> <a href="register.html" class="btn small primary">Register</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
     <div class="login">
         <form action="index.html">
         <h3>Login to your Account</h3>
-        <label for="username">Username : </label>
-        <input type="text" placeholder="username" required>
-        <label for="password">Password : </label>
-        <input type="password" placeholder="password" required>
+    <label for="username">Username : </label>
+    <input id="username" name="username" type="text" placeholder="username" required>
+    <label for="password">Password : </label>
+    <input id="password" name="password" type="password" placeholder="password" required>
         <p>If you don't have an Account. | <a href="register.html"> Register</a></p>
-        <button>Submit</button>
+    <button class="btn primary">Submit</button>
         </form>
     </div>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <a href="index.html" class="brand"><img src="https://hexadefend.com/static/media/hexalogo2.1689242e6f096bc381e4.webp" alt="HexaDefend logo"><span class="brand-text">HexaDefend</span></a>
+                <p class="muted">Trusted cybersecurity services for businesses of all sizes.</p>
+            </div>
+            <div class="footer-right">
+                <p>Contact: hello@hexadefend.com</p>
+                <p>Follow us: <a href="#">Twitter</a> • <a href="#">LinkedIn</a></p>
+                <p>© 2025 HexaDefend</p>
+            </div>
+        </div>
+    </footer>
     <script src="log.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

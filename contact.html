@@ -4,27 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="logo">
+            <a class="brand" href="index.html"><img src="https://hexadefend.com/static/media/hexalogo2.1689242e6f096bc381e4.webp" alt="hexadefend-logo"><span class="brand-text">HexaDefend</span></a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="account-area"><a href="login.html" class="btn small outline">Login</a> <a href="register.html" class="btn small primary">Register</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
         <form action="https://api.web3forms.com/submit" method="POST">
             <h2>Contact Form</h2>
-            <input type="hidden" name="access_key" value="ae5abf97-0c45-40cf-8f08-7e353e4a4348">
+            <input type="hidden" name="access_key" value="b62f9deb-2139-486b-9288-a5fe9246e333">
             <label for="fname">Your Name : </label>
-            <input type="text" placeholder="Your Full Name" name="fname">
+            <input type="text" placeholder="Your Full Name" id="fname" name="name" required>
             <label for="Email">Your Email : </label>
-            <input type="email" placeholder="Valid Email Name" name="Email">
-            <label for="massage">Massage : </label>
-            <textarea name="massage" id="">Massage</textarea>
+            <input type="email" placeholder="you@example.com" id="Email" name="email" required>
+            <label for="message">Message : </label>
+            <textarea name="message" id="message" placeholder="Your message" required></textarea>
 
-            <label for="select">Subject</label>
-            <select>
-                <option>Job Enquiry</option>
-                <option>Join Services</option>
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+                <option value="job">Job Enquiry</option>
+                <option value="services">Join Services</option>
             </select>
-            <button>Send</button>
+            <button type="submit" class="btn primary">Send</button>
         </form>
     </div>
-</body>
-</html>
+        <!-- Unified footer -->
+    <footer id="contact" class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <a href="index.html" class="brand"><img src="https://hexadefend.com/static/media/hexalogo2.1689242e6f096bc381e4.webp" alt="hexadefend-logo"><span class="brand-text">HexaDefend</span></a>
+                <p class="muted">Trusted cybersecurity services for businesses of all sizes.</p>
+            </div>
+            <div class="footer-right">
+                <p>Contact: hello@hexadefend.com</p>
+                <p>Follow us: <a href="#">Twitter</a> • <a href="#">LinkedIn</a></p>
+                <p>© 2025 HexaDefend</p>
+            </div>
+        </div>
+    </footer>
+        <script src="app.js"></script>
+    </body>
+    </html>
