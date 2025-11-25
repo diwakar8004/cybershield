@@ -1,0 +1,35 @@
+:root{--card:#111827;--accent:#0ea5a4;--muted:#9ca3af}
+
+body{background:linear-gradient(180deg,#071019,#0f1720);color:#e6eef6;font-family:Inter, Arial, sans-serif;margin:0}
+.container{max-width:1100px;margin:40px auto;padding:0 20px}
+.center{text-align:center}
+
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service{background:rgba(255,255,255,0.03);padding:22px;border-radius:14px;box-shadow:0 12px 36px rgba(2,6,23,0.6);display:flex;flex-direction:column;gap:8px}
+.service h3{margin-top:0;font-size:20px}
+.service p{color:var(--muted);line-height:1.8;font-size:15px}
+.service .more{display:inline-flex;margin-top:18px;color:var(--accent);text-decoration:none;font-weight:700;padding:8px 12px;border-radius:10px;background:linear-gradient(90deg,rgba(14,165,164,0.08),rgba(14,165,164,0.04));align-items:center}
+.service-icon{font-size:28px;margin-bottom:6px}
+
+.service:hover,.service:focus-within{transform:translateY(-6px);box-shadow:0 20px 40px rgba(2,6,23,0.6);transition:transform 200ms ease,box-shadow 200ms ease}
+.service:active{transform:translateY(-2px)}
+.service .more:hover,.service .more:focus{color:var(--accent-2);text-decoration:none;box-shadow:0 10px 30px rgba(2,6,23,0.6);transform:translateY(-4px)}
+.service .more:focus{outline:3px solid rgba(14,165,164,0.12);outline-offset:3px}
+
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:linear-gradient(90deg,var(--card),#0f1720);backdrop-filter:blur(6px);position:sticky;top:0;z-index:40}
+.site-header .logo img{height:44px;width:44px;display:block}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:inherit}
+.brand-text{font-weight:800;font-size:18px;letter-spacing:0.6px}
+
+.site-footer{background:#071018;padding:32px 0;margin-top:28px}
+.footer-inner{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.footer-left{max-width:50%}
+.footer-right{color:var(--muted);text-align:right}
+.footer-right a{color:var(--accent);text-decoration:none}
+.footer-right a:hover,.footer-right a:focus{color:var(--accent-2)}
+
+/* ensure buttons & links are accessible */
+.service .more, .footer-right a {outline-offset:4px}
+
+@media(max-width:1000px){.services-grid{grid-template-columns:repeat(2,1fr)}.footer-inner{flex-direction:column;align-items:center;text-align:center}.footer-right{text-align:center}}
+@media(max-width:600px){.services-grid{grid-template-columns:1fr;padding:0 12px}}

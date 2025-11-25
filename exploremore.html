@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore More - HexaDefend</title>
+    <link rel="stylesheet" href="explore.css">
+    <style>
+        /* Reset and base */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html,body { height: 100%; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: url('pexels-photo-5926397.webp') center/cover no-repeat fixed;
+            color: #fff;
+            line-height: 1.4;
+        }
+
+        a { color: #6ea8fe; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Header */
+        .site-header {
+            background: rgba(0,0,0,0.6);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.75rem 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 30;
+        }
+
+        .brand { display: flex; align-items: center; gap: 0.6rem; }
+        .brand img { width: 44px; height: 44px; object-fit: cover; border-radius: 6px; }
+        .brand-text { font-weight: 700; font-size: 1.25rem; color: #fff; }
+
+        .nav-toggle { display: none; background: none; border: 0; color: #fff; font-size: 1.5rem; }
+
+        .nav-links { list-style: none; display: flex; gap: 1rem; align-items: center; }
+        .nav-links a { padding: 0.35rem 0.5rem; display: inline-block; }
+
+        .btn { padding: 0.35rem 0.6rem; border-radius: 4px; }
+        .btn.primary { background: #0b63ff; color: #fff; }
+        .btn.outline { border: 1px solid rgba(255,255,255,0.2); color: #fff; }
+
+        /* Main */
+        main { max-width: 1100px; margin: 2rem auto; padding: 1rem; }
+
+        .stt { background: rgba(0,0,0,0.55); padding: 1.5rem; border-radius: 8px; }
+        .stt h1 { text-align: center; font-size: 2rem; margin-bottom: 1rem; }
+
+        .section-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+
+        .card { background: rgba(255,255,255,0.03); padding: 1rem; border-left: 4px solid rgba(110,168,254,0.2); border-radius: 6px; }
+        .card h2 { font-size: 1.25rem; margin-bottom: 0.5rem; color: #cfe1ff; }
+        .card ul { list-style: none; display: grid; gap: 0.5rem; }
+        .card li { background: rgba(255,255,255,0.02); padding: 0.6rem; border-radius: 4px; }
+        .card h4 { font-size: 1rem; color: #fff; }
+
+        /* Footer */
+        footer { margin-top: 2rem; background: rgba(0,0,0,0.6); padding: 1rem; text-align: center; color: #ddd; }
+        footer a { color: #9ec1ff; }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .section-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 700px) {
+            .nav-toggle { display: inline-block; }
+            .nav-links { display: none; flex-direction: column; width: 100%; }
+            .nav-links.active { display: flex; }
+            .site-header { flex-direction: column; align-items: stretch; }
+            .brand { justify-content: center; }
+            #account-area { display: flex; gap: 0.5rem; justify-content: center; }
+        }
+
+        @media (max-width: 420px) {
+            .brand-text { font-size: 1rem; }
+            .stt h1 { font-size: 1.4rem; }
+            .card h2 { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header" role="banner">
+        <a href="index.html" class="brand" aria-label="HexaDefend home">
+            <img src="istockphoto-496679868-612x612.jpg" alt="HexaDefend logo">
+            <span class="brand-text">HexaDefend</span>
+        </a>
+
+        <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation">☰</button>
+
+        <nav id="main-nav" class="main-nav" role="navigation" aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="account-area"><a href="login.html" class="btn outline">Login</a> <a href="register.html" class="btn primary">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="xyz">
+        <section class="stt">
+            <h1>Our Products & Services</h1>
+
+            <div class="section-grid">
+                <article class="card">
+                    <h2>Products</h2>
+                    <ul>
+                        <li><h4>Building Technology</h4></li>
+                        <li><h4>Drive Technology</h4></li>
+                        <li><h4>Energy Solutions</h4></li>
+                        <li><h4>Financing Services</h4></li>
+                        <li><h4>Industrial Automation</h4></li>
+                        <li><h4>CyberShield Healthineers</h4></li>
+                        <li><h4>CyberShield Mobility</h4></li>
+                        <li><h4>Software Solutions</h4></li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h2>Services</h2>
+                    <ul>
+                        <li><h4>Cybersecurity Services</h4></li>
+                        <li><h4>Building Services (CyberShield Xcelerator)</h4></li>
+                        <li><h4>CyberShield CERT</h4></li>
+                        <li><h4>Digital Enterprise Services</h4></li>
+                        <li><h4>Large Drives Application Services</h4></li>
+                        <li><h4>Home Appliance Service</h4></li>
+                        <li><h4>Advanta Digital Consulting & Solutions</h4></li>
+                        <li><h4>TaxChain</h4></li>
+                        <li><h4>Vilocify Vulnerability Services</h4></li>
+                        <li><h4>Technology Accelerator</h4></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p><strong>Contact:</strong> hello@hexadefend.com | (555) 123-4567</p>
+        <p>© 2024 CYBER SHIELD. All rights reserved</p>
+        <div>
+            <a href="#">Facebook</a> &nbsp;|&nbsp;
+            <a href="https://www.instagram.com/hexa.defend?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a> &nbsp;|&nbsp;
+            <a href="#">Youtube</a>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', String(!expanded));
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when link clicked (helpful on mobile)
+        document.querySelectorAll('.nav-links a').forEach(a => {
+            a.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+</html>
