@@ -147,7 +147,7 @@ blockquote{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)
 .muted{color:var(--muted)}
 .center{text-align:center}
 
-
+/* Logo sizing and footer adjustments */
 .brand img {
   height: 85px;        /* adjust logo size */
   width: 45px;         /* keeps aspect ratio */
@@ -171,7 +171,3 @@ blockquote{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)
 .footer-brand .brand-text {
   font-size: 16px;     /* adjust footer brand text size */
 }
-
-
-
-
